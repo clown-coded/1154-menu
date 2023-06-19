@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+h1 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    color: black;
+}
+
+h3 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+}
+
+h4 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: black;
+}
+
+h5 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: black;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: .9em;
+    
+    color: black;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
+
+@mixin vertical {
+    p {
+        color: white;
+        font-family: neue-haas-grotesk-display, sans-serif;
+        font-weight: 600;
+        letter-spacing: .2em;
+        position: absolute;
+        font-size: 20px;
+        text-transform: uppercase;
+        transform: rotate(-90deg);
+        transform-origin: right 102%;
+        right: 23%;
+        margin: -22%;
+        width: 370%;
+        text-align: right;
+       
+   
+    white-space: nowrap;
+    }
+
+}
+
+@mixin order-button-text{
+    color: white;
+}

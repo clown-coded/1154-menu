@@ -1,0 +1,3644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1154 DIGITAL MENU</title>
+
+    <!-- Bootstrap CSS link to CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xyj5pyc.css">
+
+</head>
+
+<body>
+
+    <!-- =========== SITE CONTAINER =========== -->
+   
+
+
+    <div class="site-container">
+
+        <!-- *** UPPER MENU STARTS *** -->
+        <div class="upper-menu-container"> 
+
+            <!-- TOGGLE BUTTONS -->
+            <div class="toggle-container">
+                
+                <div class="df toggle off" id="df">
+                    <h5>DF</h5>
+
+                </div>
+                <div class="gf toggle off " id="gf">
+                    <h5>GF</h5>
+
+                </div>
+                <div class="v toggle off" id="v">
+                    <h5>V</h5>
+
+                </div>
+                <div class="vg toggle off" id="vg">
+                    <h5>VG</h5>
+
+                </div>
+
+            </div>
+            <!-- TOGGLE BUTTONS END -->
+
+            <!-- TABLE NUMBER -->
+            <div class="table-no-container">
+
+                <h5>TABLE NO. </h5>
+                <div class="table-no">
+                    <h5>11</h5>
+                </div>
+
+
+
+
+
+            </div>
+            <!-- TABLE NUMBER ENDS -->
+
+        </div>
+        <!-- *** UPPER MENU ENDS *** -->
+
+
+        <!-- MAIN SITE CONTENT *contains menu items*-->
+        <div class="menu-container">
+
+            <!-- DIETARY MESSAGE POPUP -->
+            <div class="dietary-message-container hidden" id="dietary-message">
+                <p>All (non vegan) sauces apart from Ravioli can be made with GF pasta</p>
+                <p>
+                    *our Vegan pasta includes gluten so cannot be made GF . Our GF pasta contains egg so cannot be made
+                    Vegan</p>
+                <div class="ok-button" id="dietary-ok-button">
+                    <h5>ok</h5>
+                </div>
+            </div>
+
+            <!-- *** MENU STARTS *** -->
+
+            <!-- *** SPECIALS *** -->
+
+            <div class="specials menu-section">
+
+                <!-- SPECIALS SIDEBAR -->
+                <div class="specials sidebar selected">
+                    <div class="section-label">
+                        <p>specials</p>
+                    </div>
+
+
+                </div>
+                <!-- SPECIALS SIDEBAR ENDS -->
+
+                <!-- SPECIAL MENU ITEMS -->
+
+                <!-- CONTAINS ALL MENU ITEMS IN SECTION -->
+                <div class="specials menu-item-container">
+                    <!-- SINGULAR MENU ITEM -->
+                    <div class="menu-item closed" id="weekly-special-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="weekly-special first menu-item-header " id="weekly-special">
+                            
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                               
+                                <div class="title">
+                                    <h5>1. WEEKLY SPECIAL</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Long, thin pasta. Spicy creamy tomato sauce, garlic, chilli, prawns, parsley, breadcrumbs, basil</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>23</h5>
+                            </div>
+                            <div class="arrow closed" id="weekly-special-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- ADD-ONS DROPDOWN -->
+                        <div class="addon-container hidden" id="weekly-special-addon">
+                            <div class="checkbox-container ">
+
+                                <!-- ADD-CHECKBOXES -->
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox" name="baconCheck" id="baconCheck" value="bacon">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on"><b>make it a combo</b>  Roll & Tap Wine/Beer</p>
+                                        <p class="price">30</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                           
+
+                            <!-- ADD-ON NOTES -->
+                            <div class="notes-container ">
+                                
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+
+
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+                            <!-- ADD-ON NOTES END -->
+                        </div>
+
+
+
+
+                    </div>
+
+                    <!-- MENU ITEM 1 ENDS -->
+
+                    <!-- MENU ITEM 2 STARTS -->
+
+                    <div class="menu-item closed" id="baked-sunday-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="baked-sunday menu-item-header" id="baked-sunday">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>2. baked sunday</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Short, tube pasta. Cheese sauce, chicken</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>23</h5>
+                            </div>
+                            <div class="arrow closed" id="baked-sunday-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="baked-sunday-addon">
+                            <div class="checkbox-container ">
+
+                                <!-- CHECKBOXES -->
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on"><b>make it a combo</b>  Roll & Tap Wine/Beer</p>
+                                        <p class="price">30</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                            <!-- ADD-ON NOTES CONTAINER -->
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                            <!-- ADD-ON NOTES ENDS -->
+                        </div>
+
+
+
+
+                    </div>
+                    <br>
+
+
+
+                </div>
+
+            </div>
+
+            <!-- *** PASTA SECTION *** -->
+
+            <div class="pasta menu-section not-v">
+
+                <!-- PASTA SIDEBAR -->
+                <div class="pasta sidebar ">
+                    <div class="section-label">
+                        <p>pasta</p>
+                    </div>
+
+
+                </div>
+                <!-- PASTA SIDEBAR ENDS -->
+                <div class="pasta menu-item-container">
+                    <div class="menu-item closed not-v not-vg not-df" id="pasta1-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="pasta1  first menu-item-header" id="pasta1">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>1. linguine gamberi</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Long, flat pasta. Tomato, garlic & chilli sauce, prawns, anchovies, capers,
+                                        olives, parmesan</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>23</h5>
+                            </div>
+                            <div class="arrow closed" id="pasta1-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- ADD-ON DROPDOWN -->
+                        <div class="addon-container hidden" id="pasta1-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                            <!-- NOTES CONTAINER -->
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+                            <!-- NOTES CONTAINER ENDS -->
+                        </div>
+
+
+
+
+                    </div>
+
+                    <!-- MENU ITEM ENDS -->
+
+                    <!-- MENU ITEM -->
+                    <div class="menu-item closed not-df not-v" id="pasta2-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="pasta2  menu-item-header" id="pasta2">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>2. FUSILLI PESTO</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Short, spiral pasta. Kale & cashew pesto & cream sauce, olives, parmesan</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>19</h5>
+                            </div>
+                            <div class="arrow closed" id="pasta2-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="weekly-special-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                            <!-- NOTES CONTAINER  -->
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <!-- MENU ITEM ENDS -->
+
+                    <!-- MENU ITEM -->
+
+                    <div class="menu-item closed not-v not-vg not-df" id="pasta3-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="pasta3  menu-item-header" id="pasta3">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>3. CONCHIGLIE ALLA BOLOGNESE</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Small, shell pasta. Northern Italian beef & pork sauce, parmesan</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>22</h5>
+                            </div>
+                            <div class="arrow closed" id="pasta3-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="pasta3-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <!-- MENU ITEM ENDS -->
+
+                    <!-- MENU ITEM -->
+
+                    <div class="menu-item closed not-v" id="pasta4-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="pasta4  menu-item-header" id="pasta4">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>4. RIGATONI ALLA CAPONATA</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Short, tube pasta. Agrodolce tomato sauce, eggplant, ricotta salata, pine nut</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>21</h5>
+                            </div>
+                            <div class="arrow closed" id="pasta4-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="pasta4-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="menu-item closed not-v not-vg not-df" id="pasta5-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="pasta5  menu-item-header" id="pasta5">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>5. FETTUCCINE CARBONARA</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Long (flat) pasta. Creamy egg & pepper sauce, bacon, parmesan</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>20</h5>
+                            </div>
+                            <div class="arrow closed" id="pasta5-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="pasta5-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="menu-item closed not-v not-df" id="pasta6-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="pasta6  menu-item-header" id="pasta6">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>6. SPAGHETTI POMODORO</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Long, thin pasta. Classic tomato & basil sauce, parmesan</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>16</h5>
+                            </div>
+                            <div class="arrow closed" id="pasta6-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="pasta6-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="menu-item closed not-v not-vg not-df" id="pasta7-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="pasta7  menu-item-header" id="pasta7">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>7. PAPPARDELLE RICCI D’AGNELLO</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Short, frizzy pasta. Slow cooked lamb ragu, rosemary, olives, sweet garlic,
+                                        parmesan</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>26</h5>
+                            </div>
+                            <div class="arrow closed" id="pasta7-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="pasta7">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="menu-item closed not-v not-vg not-df" id="pasta8-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="pasta8  menu-item-header " id="pasta8">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>8. RAVIOLI DI SALSICCIA</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Filled pasta. Red wine vinegar & tomato sauce, sausage, green capsicum, three
+                                        cheese (filled), parmesan</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>22</h5>
+                            </div>
+                            <div class="arrow closed" id="pasta8-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="pasta8-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="menu-item closed not-v not-df" id="pasta9-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="pasta9  menu-item-header" id="pasta9">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>9. RAVIOLI DI RICOTTA</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Spinach & ricotta (filled) pasta, brown butter sauce, sage, hazelnuts, parmesan
+                                    </P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>20</h5>
+                            </div>
+                            <div class="arrow closed" id="pasta9-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="pasta9-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <br>
+
+
+
+                </div>
+
+            </div>
+
+            <!-- *** PASTA SECTION END*** -->
+
+            <!-- *** DIETARY SECTION *** -->
+
+
+            <div class="dietary menu-section">
+
+                <!-- DIETARY SIDEBAR -->
+                <div class="dietary sidebar ">
+                    <div class="section-label">
+                        <p>dietary</p>
+                    </div>
+
+
+                </div>
+                <!-- DIETARY SIDEBAR ENDS -->
+
+                <!-- MENU ITEMS -->
+                <div class="dietary menu-item-container">
+
+                    <!--  MENU ITEM -->
+                    <div class="menu-item closed not-gf" id="dietary-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="dietary1  first menu-item-header" id="dietary1">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>1. VEGAN POMODORO</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Vegan pasta with tomato & herb sauce, nutritional yeast</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>16</h5>
+                            </div>
+                            <div class="arrow closed" id="dietary1-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="dietary1-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <div class="menu-item closed not-gf" id="dietary2-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="dietary2  menu-item-header" id="dietary2">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>2. VEGAN GAMBERI</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Vegan pasta, Tomato, garlic & chilli sauce, mushrooms, capers, olives,
+                                        nutritional yeast</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>23</h5>
+                            </div>
+                            <div class="arrow closed" id="dietary2-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="weekly-special-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <div class="menu-item closed not-gf" id="dietary3-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="dietary3  menu-item-header" id="dietary3">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>3. VEGAN CAPONATA</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Vegan pasta, agrodolce tomato sauce, eggplant, pine nuts, nutritional yeast</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>21</h5>
+                            </div>
+                            <div class="arrow closed" id="dietary3-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="dietary3-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <div class="menu-item closed not-gf" id="dietary4-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="dietary4  menu-item-header" id="dietary4">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>4. VEGAN PESTO</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Vegan pasta, kale & cashew pesto, olives, fresh rocket, nutritional yeast</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>19</h5>
+                            </div>
+                            <div class="arrow closed" id="dietary4-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="dietary4-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <br>
+
+
+
+                </div>
+
+            </div>
+
+            <!-- *** DIETARY SECTION END *** -->
+
+            <!-- *** NOT PASTA SECTION *** -->
+            <div class="not-pasta menu-section">
+
+                <!-- NOT-PASTA SIDEBAR -->
+                <div class="not-pasta sidebar ">
+                    <div class="section-label">
+                        <p>not pasta</p>
+                    </div>
+
+
+                </div>
+                <!-- NOT-PASTA SIDEBAR ENDS -->
+
+                <!-- NOT-PASTA MENU ITEMS  -->
+                <div class="not-pasta menu-item-container">
+                    <div class="menu-item closed short not-gf not-df not-v" id="not-pasta1-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="not-pasta1  first menu-item-header" id="not-pasta1">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>1. 1154 GARLIC & ROSEMARY ROLL</h5>
+                                </div>
+                                <div class="description">
+                                    <P></P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>3</h5>
+                            </div>
+                            <div class="arrow closed" id="not-pasta1-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="not-pasta1-addon">
+
+
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="menu-item closed" id="not-pasta2-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="not-pasta2 menu-item-header" id="not-pasta2">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>2. MARINATED OLIVES</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Citrus zest, rosemary & garlic</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>10</h5>
+                            </div>
+                            <div class="arrow closed" id="not-pasta2-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="not-pasta2-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="menu-item closed" id="not-pasta3-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="not-pasta3 menu-item-header" id="not-pasta3">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>3. GIARDINIERA</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Pickled seasonal vegetables</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>6</h5>
+                            </div>
+                            <div class="arrow closed" id="not-pasta3-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="not-pasta3-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="menu-item closed" id="not-pasta4-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="not-pasta4 menu-item-header" id="not-pasta4">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>4. GREENS</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Seasonal greens with garlic & lemon</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>12</h5>
+                            </div>
+                            <div class="arrow closed" id="not-pasta4-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="not-pasta4-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="menu-item closed  not-df not-v" id="not-pasta5-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="not-pasta5  menu-item-header" id="not-pasta5">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>5. ROCKET</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Walnuts, red onion, parmesan, balsamic dressing</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>12</h5>
+                            </div>
+                            <div class="arrow closed" id="not-pasta5-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="not-pasta5-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bacon</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chicken</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">prawns</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">mushrooms</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pine nuts</p>
+                                        <p class="price">6</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">breadcrumbs</p>
+                                        <p class="price">1</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">walnuts</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">parmesan</p>
+                                        <p class="price">3</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">chilli</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">olives</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">capers</p>
+                                        <p class="price">2</p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                    <br>
+
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="sweet menu-section">
+
+                <!-- SWEET SIDEBAR -->
+                <div class="sweet sidebar ">
+                    <div class="section-label">
+                        <p>sweet</p>
+                    </div>
+
+
+                </div>
+                <!-- SWEET SIDEBAR ENDS -->
+
+                <!-- SWEET MENU ITEMS -->
+
+                <div class="sweet menu-item-container">
+                    <div class="menu-item closed short" id="sweet1-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="sweet1 first menu-item-header" id="sweet1">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>1. PANNA COTTA</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Coffee caramel, almonds</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>10</h5>
+                            </div>
+                            <div class="arrow closed" id="sweet1-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="sweet1-addon">
+
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="menu-item closed short" id="sweet2-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="sweet2 menu-item-header" id="sweet2">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>2. TORTA CIOCCOLATO</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Flourless chocolate cake</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>10</h5>
+                            </div>
+                            <div class="arrow closed" id="sweet2-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="sweet2-addon">
+
+
+
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <br>
+
+
+
+                </div>
+
+            </div>
+
+           <!-- *** AT HOME SECTION *** -->
+
+            <div class="at-home menu-section">
+
+               
+
+
+                <!-- AT-HOME SIDEBAR -->
+                <div class="at-home sidebar">
+                    <div class="section-label">
+                        <p>at home</p>
+                    </div>
+
+
+                </div>
+
+                <!-- AT HOME SIDEBAR ENDS -->
+
+                <!-- AT-HOME MENU ITEMS START -->
+
+                <div class="at-home menu-item-container">
+                    <div class="menu-item closed medium" id="at-home1-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="at-home1  first menu-item-header" id="at-home1">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>1. FRESH PASTA 300g / VEGAN 300g / GF 250g</h5>
+                                </div>
+                                <div class="description">
+                                    <P></P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>7</h5>
+                            </div>
+                            <div class="arrow closed" id="at-home1-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        
+                            <div class="addon-container hidden" id="at-home1-addon">
+
+                                <div class="checkbox-container ">
+                                    <div class="checkboxes side1">
+
+                                        <label class="b-contain">
+                                            <p class="add-on">fettucine</p>
+                                            <p class="price"></p>
+                                            <input type="checkbox">
+                                            <div class="b-input"></div>
+                                        </label>
+                                        <label class="b-contain">
+                                            <p class="add-on">rigatoni</p>
+                                            <p class="price"></p>
+                                            <input type="checkbox">
+                                            <div class="b-input"></div>
+                                        </label>
+                                        <label class="b-contain">
+                                            <p class="add-on">puttanesca</p>
+                                            <p class="price"></p>
+                                            <input type="checkbox">
+                                            <div class="b-input"></div>
+                                        </label>
+
+
+
+
+                                    </div>
+                                    <div class="checkbox side2">
+
+
+
+                                    </div>
+
+                                </div>
+                                <div class="notes-container ">
+                                    <div class="notes side1">
+                                        <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                    </div>
+                                    <div class="notes side2">
+                                        <label class="b-contain">
+                                            <p class="add-on">gluten free</p>
+
+                                            <input type="checkbox">
+
+                                            <div class="b-input"></div>
+                                        </label>
+                                        <label class="b-contain">
+                                            <p class="add-on">dairy free</p>
+
+                                            <input type="checkbox">
+                                            <div class="b-input"></div>
+                                        </label>
+
+                                        <div class="add-button">
+                                            <h5>add</h5>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+
+
+
+                        
+                    </div>
+
+
+                    <div class="menu-item closed medium" id="at-home2-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="at-home2  menu-item-header" id="at-home2">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>2. PASTA SAUCE</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Bolognese / Pomodoro / Puttanesca</P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>8</h5>
+                            </div>
+                            <div class="arrow closed" id="at-home2-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="at-home2-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bolognese</p>
+                                        <p class="price"></p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pomodoro</p>
+                                        <p class="price"></p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">puttanesca</p>
+                                        <p class="price"></p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+
+
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="menu-item closed medium" id="at-home3-item">
+
+                        <!-- COLLAPSED MENU ITEM HEADER -->
+                        <div class="at-home3  menu-item-header " id="at-home3">
+                            <!-- ITEM INFORMATION - TITLE, DESCRIPTION, PRICE -->
+
+                            <div class="text-info">
+                                <div class="title">
+                                    <h5>3. MY PASTA BAG</h5>
+                                </div>
+                                <div class="description">
+                                    <P>Your choice of pasta & sauce, 2 x 1154 garlic & rosemary rolls & parmesan cheese
+                                    </P>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <h5>18</h5>
+                            </div>
+                            <div class="arrow closed" id="at-home3-arrow">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <!-- COLLAPSED ENDS -->
+
+                        <!-- DROPDOWN -->
+                        <div class="addon-container hidden" id="at-home3-addon">
+                            <div class="checkbox-container ">
+                                <div class="checkboxes side1">
+
+                                    <label class="b-contain">
+                                        <p class="add-on">bolognese</p>
+                                        <p class="price"></p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">pomodoro</p>
+                                        <p class="price"></p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">puttanesca</p>
+                                        <p class="price"></p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+
+
+                                </div>
+                                <div class="checkbox side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">fettucine</p>
+                                        <p class="price"></p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">rigatoni</p>
+                                        <p class="price"></p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">puttanesca</p>
+                                        <p class="price"></p>
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+
+
+                                </div>
+
+                            </div>
+                            <div class="notes-container ">
+                                <div class="notes side1">
+                                    <input type="text" placeholder="ADD NOTES" class="notes-input" />
+
+                                </div>
+                                <div class="notes side2">
+                                    <label class="b-contain">
+                                        <p class="add-on">gluten free</p>
+
+                                        <input type="checkbox">
+
+                                        <div class="b-input"></div>
+                                    </label>
+                                    <label class="b-contain">
+                                        <p class="add-on">dairy free</p>
+
+                                        <input type="checkbox">
+                                        <div class="b-input"></div>
+                                    </label>
+
+                                    <div class="add-button">
+                                        <h5>add</h5>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+            <!-- ORDER TOTAL FOOTER -->
+
+
+            <div class="lower-menu-container">
+                <div class="logo-container checkout">
+                    <div class="logo">
+                        <img src="assets/1154-logo-vertical.png" alt="" class="logo-img">
+                    </div>
+                    <div class="call-for-service-arrow">
+                        <i class="fa-solid fa-chevron-left closed" id="open-call-for-service"></i>
+                    </div>
+
+                </div>
+
+                <div class="divider">
+
+                    <div class="spacer">
+
+                    </div>
+
+
+
+                    <div class="order-total-container">
+                        <div class="price-total-container" id="order-total-price">
+                            <h5>$</h5>
+                            <h5 class="order-total"> $$ </h5>
+                            <div class="cart-icon" id="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+
+                            </div>
+
+                        </div>
+                        <div class="order-button" id="order-button-menu">
+                            <h3>order</h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <!-- ORDER TOTAL FOOTER END -->
+
+
+
+            <!-- MODALS -->
+
+            <div class="call-service-container hidden" id="call-service">
+                <div class="info-text">
+                    <p>Our aim is to source the best ingredients we can to make the best possible version of classic
+                        pasta dishes you already know & love. From scratch. Our fresh pasta is made daily in-house using
+                        free range eggs & NZ Semolina.</p>
+
+                </div>
+                <div class="call-service-button" id="call-service-button">
+                    <h5>call for service</h5>
+
+                </div>
+            </div>
+
+            <!-- IN MENU CART VIEW -->
+            <div class="popup-cart-container hidden" id="popupcart-menu">
+                <!-- ORDER ITEM CONTAINER - WILL HAVE MULTIPLE ORDER ITEMS DEPENDING ON ORDER -->
+                <div class="order-item closed" id="popupcart-menu-item">
+                    <!-- MAIN ORDER DETAILS - OPENS TO SHOW ADD-ONS -->
+                    <div class="order-item-header">
+                        <div class="side1">
+                            <h5 class="item-name">1. MENU ITEM</h5>
+                            <div class="arrow ">
+                                <i class="fa-solid fa-chevron-down closed" id="popupcart-item-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="side2">
+                            <h5 class="cart-item-price">$26</h5>
+                            <div class="quantity-container">
+                                <h5>1</h5>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- MAIN ORDER DETAILS ENDS -->
+
+                    <!-- ADDON ON DROP DOWN -->
+                    <div class="order-addon-container hidden" id="popup-menu-item-add-ons">
+                        <div class="add-ons">
+                            <p> + add on</p>
+
+                        </div>
+                        <div class="notes">
+                            <p> notes about order</p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+         <!-- MENU CONTENT CONTAINER ENDS -->
+
+    </div>
+
+    <!-- CALL FOR SERVICE MODAL -->
+    <div class="help-modal-wrapper hidden" id="help-modal">
+        <div class="help-modal-container">
+            <i class="fa-solid fa-x" id="close-modal"></i>
+            <h5>help is on the way</h5>
+
+
+        </div>
+
+    </div>
+    <!-- CALL-FOR SERVICE MODAL END -->
+
+
+   
+
+
+
+
+    <!-- Bootstrap bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/bef075bc5c.js" crossorigin="anonymous"></script>
+    <!-- Custom JS file -->
+    <script src="js/menu.js">
+
+    </script>
+</body>
+
+</html>

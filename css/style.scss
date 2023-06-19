@@ -1,0 +1,1614 @@
+@import 'colours';
+@import 'typography';
+@import 'layout';
+@import 'buttons';
+@import 'border';
+@import 'checkboxes';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.hidden {
+    display: none !important;
+ 
+}
+
+.shown{
+    display: none !important;
+}
+
+
+
+// STRUCTURE
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+    
+}
+
+
+// SITE CONTAINER
+
+.site-container {
+    @include site-container-layout;
+    @include standard-border;
+
+}
+
+// UPPER MENU
+.upper-menu-container {
+    @include upper-menu-container-layout;
+    @include standard-border-bottom;
+
+    // TOGGLE LAYOUTS
+    .toggle-container {
+        @include toggle-container-layout;
+
+
+        .toggle {
+            @include dietary-toggle;
+            @include standard-border;
+            background-color: #b43b2d;
+            transition: ease-in 0.5s;
+
+            h5 {
+                color: white;
+            }
+
+        }
+
+        .off {
+            background-color: white;
+            transition: ease-in 0.5s;
+
+            h5 {
+                color: black;
+            }
+
+        }
+
+
+    }
+
+    // TABLE NO LAYOUTS
+    .table-no-container {
+        @include table-no-container-layout;
+
+
+        .table-no {
+            @include table-no;
+            @include standard-border;
+
+            h5 {
+                white-space: nowrap;
+            }
+        }
+
+
+    }
+
+}
+
+// MAIN MENU CONTENT
+.menu-container {
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+
+    @include menu-container-layout;
+
+
+
+
+
+    // CONTAINS EVRY THING IN MENU SECTION
+    .menu-section {
+        @include menu-section-layout;
+        // overflow-x: hidden;
+
+        .selected {
+
+            background-color: #b43b2d;
+
+            h5 {
+                color: white;
+            }
+        }
+
+        .sidebar {
+            @include sidebar-layout;
+            @include standard-border-right;
+            @include standard-border-top;
+
+
+            background-color: #b43b2d;
+
+
+
+
+            .section-label {
+                position: relative;
+                @include vertical;
+
+
+                color: white;
+
+
+            }
+
+
+
+
+            .specials {
+                background-color: white;
+                border-top: none;
+            }
+
+        }
+
+    }
+
+    // CONTAINS ALL MENU-ITEMS IN SECTION
+    .menu-item-container {
+        @include menu-item-container;
+
+    }
+
+
+    .first {
+        @include standard-border-top;
+    }
+
+    // LAYOUT FOR MENU ITEM
+
+    .menu-item.closed {
+        min-height: 80px;
+        transition: min-height 0.5s ease;
+
+    }
+    .menu-item.short.closed{
+        min-height: 80px;
+        transition: min-height 0.5s ease;
+
+    }
+    .menu-item.medium.closed{
+        min-height: 80px;
+        transition: min-height 0.5s ease;
+
+    }
+    .menu-item.short{
+        min-height: 250px;
+
+    }
+    .menu-item.medium{
+        min-height: 420px;
+
+    }
+   
+
+    
+    .menu-item {
+        min-height: 620px;
+        transition: min-height 0.5s ease;
+        @include menu-item;
+        @include standard-border-bottom;
+
+        .menu-item-header {
+
+            @include menu-item-header;
+
+            .text-info {
+                @include text-info;
+
+                .title {
+                    margin-bottom: -5px;
+                }
+
+                .description {
+                    margin-left: 15px;
+                }
+
+            }
+
+            .item-price {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .arrow {
+                @include center;
+                // padding-bottom: 3px;
+                transition: 1s;
+                
+
+               
+
+
+            }
+            .arrow.closed {
+                transform: rotate(180deg);
+                transition: 1s;
+                
+            }
+
+
+
+
+
+        }
+
+        // DROPDOWN MENU ITEM 
+        .checkbox-container {
+            @include checkbox-container-layout;
+
+
+
+        }
+
+
+        .checkboxes {
+            margin-left: 10%;
+        }
+
+
+        .notes-container {
+
+
+
+            .notes-input {
+
+                text-align: start;
+                border-color: #b43b2d;
+                background-color: #b43b2d62;
+                color: #000000;
+                border-style: solid;
+                border-radius: 0px;
+
+
+                :focus-visible {
+                    outline: none;
+                }
+
+
+            }
+
+            .side2 {
+
+
+
+                .add-button {
+                    position: relative;
+                    @include center;
+                    margin-left: 0%;
+                    left: 50%;
+                    width: 50%;
+                    height: 45px;
+                    background-color: #b43b2d;
+
+                    h5 {
+                        padding-top: 5%;
+                        padding-right: 5%;
+                        color: white;
+                    }
+
+                }
+            }
+
+
+        }
+
+        // CHECKBOX STYLING
+
+        .b-contain {
+
+            @include row;
+            position: relative;
+            padding-left: 2.77rem;
+            cursor: pointer;
+            margin-bottom: 5%;
+
+            *,
+            *::before,
+            *::after {
+                box-sizing: content-box !important;
+            }
+
+            input {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+
+            }
+
+
+
+
+            .price {
+                @include center;
+
+                margin-top: 2%;
+                font-weight: 700;
+
+
+            }
+
+
+            p {
+                line-height: 1.28;
+                font-size: 13px;
+                font-family: inherit;
+                @include uppercase;
+
+
+            }
+
+            input[type="checkbox"]~.b-input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 1.77rem;
+                width: 1.77rem;
+                background: rgba(180, 59, 45, 0.37);
+                transition: background 250ms;
+                border: 2px solid rgba(180, 59, 45, 1);
+                border-radius: 0rem;
+            }
+
+            input[type="checkbox"]~.b-input::after {
+                content: '';
+                position: absolute;
+                display: none;
+                left: 0.86rem;
+                top: 0.08rem;
+                width: 0.33rem;
+                height: 1.38rem;
+                border: solid rgba(255, 255, 255, 1);
+                border-width: 0 1px 1px 0;
+                transition: background 250ms;
+                transform: rotate(45deg);
+            }
+
+            input:checked~.b-input::after {
+                display: block;
+            }
+
+            :hover input~.b-input,
+            input:focus~.b-input {
+                background: rgba(180, 59, 45, 0.26);
+            }
+
+            input:focus~.b-input {
+                box-shadow: 0 0 0 2px rgba(52, 144, 220, 0);
+            }
+
+            input:checked~.b-input {
+                background: rgba(180, 59, 45, 1);
+                border-color: rgba(180, 59, 45, 1);
+            }
+
+            input[type="checkbox"]:disabled~.b-input {
+                background: rgba(241, 245, 248, 1);
+                border-color: rgba(184, 194, 204, 1);
+                opacity: 0.6;
+                cursor: not-allowed;
+            }
+
+
+
+
+            input:checked:focus~.b-input,
+            :hover input:not([disabled]):checked~.b-input {
+                background: rgba(180, 59, 45, 1);
+                border-color: rgba(180, 59, 45, 1);
+            }
+
+            .b-input::before {
+                content: '';
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 3rem;
+                height: 3rem;
+                margin-left: -0.85rem;
+                margin-top: -0.85rem;
+                background: rgba(0, 130, 243, 1);
+                border-radius: 2rem;
+                opacity: .6;
+                z-index: 99999;
+                transform: scale(0);
+            }
+
+
+            .b-input::before {
+                visibility: hidden;
+            }
+
+            input:focus+.b-input::before {
+                visibility: visible;
+            }
+
+            :first-child .b-input::before {
+                visibility: hidden;
+            }
+        }
+
+
+
+
+
+        .item {
+            @include row;
+            // justify-content: center;
+            align-items: center;
+            margin-left: 5%;
+
+
+            .checkboxes {
+                position: absolute;
+
+            }
+
+
+        }
+    }
+
+
+
+
+    
+
+
+
+
+}
+
+//  TRANSITIONS FOR ADD-ONS
+.addon-container.hidden{
+    min-height: 0px;
+    transition: min-height 0.5s ease-in;
+    
+}
+
+.addon-container{
+    min-height: 100px;
+   
+    transition: min-height 0.5s ease-in;
+}
+
+// ORDER SUMMARY PAGE
+
+.site-container.order-page{
+    // z-index: 1;
+
+}
+.menu-item.order-page{
+    min-height: 140px;
+
+}
+.menu-item.order-page.closed{
+    min-height: 80px;
+
+}
+
+.menu-section.order-page {
+    width: 100%;
+    height: 45%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    @include standard-border-bottom;
+
+    .text-info.order-page {
+        @include row;
+        margin-top: 2%;
+
+
+        .title {
+            margin-right: 5%;
+            
+        }
+
+    }
+    .arrow{
+        color: #000000;
+    }
+
+    .item-price {
+        
+        h5{
+            margin-bottom: 0;
+        }
+
+    }
+
+    .quantity-container {
+        @include standard-border;
+        @include center;
+        margin-top: 1%;
+        width: 40px;
+
+    }
+
+    .order-info-container {
+        @include checkbox-container-layout;
+
+        .side1.order-page {
+            margin-left: 15%;
+        }
+
+        .side2.order-page {
+            @include right;
+
+
+            .quantity-buttons-container {
+                @include row;
+
+
+                .fa-solid {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    @include center;
+                    
+                }
+
+                h5 {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+}
+
+// CHECKOUT NOTES 
+
+.checkout-container {
+    height: 8%;
+    @include row;
+    @include standard-border-bottom;
+
+    .sidebar {
+        height: 100%;
+        @include standard-border-right;
+        @include center;
+        @include column;
+        background-color: white;;
+        z-index: 1;
+
+        h5{
+            color: #b43b2d;
+            margin-bottom: 0;
+        }
+
+    }
+
+    .notes-input-container {
+        width: 70%;
+
+        input {
+            border: none;
+            margin: none;
+        }
+    }
+
+    .add-button {
+        @include center;
+        background-color: #b43b2d;
+        width: 40%;
+
+        h5 {
+            color: white;
+        }
+    }
+
+    .subtotal-price-container {
+        
+        width: 100%;
+        @include row;
+        align-content: center;
+        margin-left: 2%;
+
+        h5 {
+            
+            position: relative;
+        }
+
+    }
+
+
+
+
+}
+
+
+
+// <!-- ORDER TOTAL FOOTER -->
+
+.lower-menu-container {
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+
+    @include row;
+
+
+
+    .divider {
+        @include column;
+        width: 93.5%;
+
+        .spacer {
+            height: 50.5%;
+        }
+
+
+        .order-total-container {
+
+            background-color: white;
+            @include order-total-container-layout;
+            @include standard-border-bottom;
+            @include standard-border-top;
+
+
+
+            .price-total-container {
+                @include price-total-container-position;
+
+                .fa-cart-shopping {
+                    width: 60%;
+                    color: #b43b2d;
+                }
+
+                h5 {
+                    margin-bottom: 0%;
+                }
+
+            }
+
+            .order-button {
+                cursor: pointer;
+                @include order-button-layout;
+                @include order-button-text;
+                background-color: #b43b2d;
+                color: white;
+
+            }
+
+
+
+
+        }
+    }
+
+
+
+    .close-tab-button {
+        margin-left: 30%;
+
+    }
+
+    .logo-container {
+        @include logo-container;
+
+        background-color: #b43b2d;
+
+
+
+        .fa-chevron-left {
+            color: white;
+            transition: 1s;
+            
+            
+        }
+        .fa-chevron-left.closed{
+            transform: rotate(180deg);
+            transition: 1s;
+
+        }
+
+
+        .logo {
+            padding-top: 10%;
+
+            .logo-img {
+                width: 30px;
+                margin-top: 0%;
+                padding-left: 19%;
+                margin-bottom: 71%;
+            }
+        }
+    }
+}
+
+
+
+
+
+// CALL FOR SERVICE MODAL
+
+.call-service-container {
+    @include lower-screen-popup;
+    height: 25%;
+
+    .order-item-header{
+        justify-content: center;
+    }
+
+    .info-text{
+        margin-bottom: 10%;
+    }
+
+    p{
+        color: white;
+    }
+    h5{
+        color: white;
+    }
+
+    
+
+
+
+    .call-service-button {
+        @include standard-border;
+        border-color: white;
+        @include center;
+
+        margin-bottom: 3%;
+        width: 77%;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 25%;
+        margin-top: 4%;
+
+        h5 {
+            margin-bottom: 0;
+            color: white;
+        }
+    }
+
+    
+}
+
+
+// IN MENU CART
+
+.popup-cart-container {
+    overflow: scroll;
+    @include lower-screen-popup;
+    padding: 1%;
+    height: 27%;
+    
+
+
+    .order-item {
+
+        @include standard-border;
+        color: white;
+        border-color: white;
+
+
+        .order-item-header {
+            @include row;
+            align-items: center;
+            margin-top: 1%;
+            margin-bottom: 1%;
+
+            .side1 {
+                @include row;
+                width: 70%;
+
+                .item-name {
+                    
+                    margin-right: 5%;
+                    color: white;
+
+                    h5 {
+                        margin-bottom: 0;
+                        
+                    }
+                }
+
+
+            }
+
+            .side2 {
+                @include row;
+                @include center;
+
+                .fa-chevron-down.closed {
+                    
+                    transition: 1s;
+
+                }
+                .fa-chevron-down {
+                    transform: rotate(180deg);
+                    transition: 1s;
+                    color: white;
+
+                }
+                .cart-item-price{
+                    color: white;
+                    margin-right: 10%;
+                }
+
+
+                .quantity-container {
+                    margin-right: 5%;
+                    
+                    @include standard-border;
+                    border-color: white;
+                    @include center;
+                    
+
+                    h5 {
+                        margin-left: 5%;
+                        color: white;
+
+                    }
+
+                    width: 50px;
+
+
+                }
+            }
+
+        }
+
+        .order-addon-container {
+            bottom: 1.8%;
+            margin-left: 10%;
+
+            p{
+                color: white;
+            }
+
+
+        }
+
+
+
+    }
+
+
+}
+
+// DIETARY MESSAGE POPUP
+.dietary-message-container {
+    padding: 4%;
+    position: absolute;
+    height: 30%;
+    width: 95.5%;
+    background-color: #b43b2d;
+    z-index: 1;
+   
+    p{
+        font-size: 16px;
+        color: white;
+    }
+
+    .ok-button {
+        position: relative;
+        @include standard-border;
+        border-color: white;
+        @include center;
+       
+        margin-left: 80%;
+
+        h5{
+            color: white;
+            padding: 5%;
+            margin-bottom: 0;
+        }
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// SIDEBAR FILL IN ON CHECKOUT PAGE
+
+.sidebar-extension {
+    z-index: 0;
+    position: absolute;
+    background-color: #b43b2d;
+    top: 40%;
+
+}
+
+
+// MENU START PAGE
+
+.background-container {
+
+  position: absolute;
+    @include standard-border;
+
+    margin: 2vh;
+    height: 96vh;
+    width: 96vw;
+    
+    
+    overflow: hidden;
+  
+    .background-image {
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+}
+
+.content-container {
+    top: 0;
+    position: absolute;
+    margin: 2vw;
+    height: 96vh;
+    width: 96vw;
+    z-index: 1;
+    @include column;
+    overflow: hidden;
+  
+
+    .table-no-container.start-page {
+        position: relative;
+        @include column;
+        overflow: hidden;
+
+        width: 100%;
+        height: 40%;
+
+        .table-no-text{
+            position: absolute;
+            left: 25%;
+            top: 4%;
+           
+        }
+       
+
+        .arrow-container{
+            margin-top: 5%;
+            @include row;
+
+            .arrow-image{
+                width: 70%;
+                
+            }
+
+            .table-no{
+                @include center;
+                margin-left: 10%;
+            }
+        }
+        .start-order-button{
+            @include center;
+            position: relative;
+            width: 50%;
+            background-color: #b43b2d;
+            left: 25.5%;
+            height: 20%;
+            margin-top: 5%;
+           
+            h5{
+                color: white;
+                margin-bottom: 0;
+                font-size: 1em;
+                letter-spacing: 1;
+            }
+            
+        }
+
+        .start-order-button.call-service{
+            margin-top: 1%;
+            h5{
+                font-size: 0.7em;
+            }
+        }
+        
+        
+    }
+
+
+}
+
+// ETA PAGE
+
+.eta-content-container {
+    height: 100%;
+    @include row;
+
+    .eta-sidebar {
+
+        height: 100%;
+
+
+        @include standard-border-right;
+        @include column;
+
+
+        .your-order-container {
+            height: 60%;
+            position: relative;
+            @include vertical;
+            @include standard-border-bottom;
+
+            p {
+                color: #b43b2d;
+                font-size: 1.2em;
+            }
+
+
+        }
+
+        .eta-section {
+
+            position: relative;
+            @include vertical;
+            @include standard-border-bottom;
+            background-color: #b43b2d;
+
+
+        }
+    }
+
+    .eta-content {
+        @include column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 90%;
+
+        .thank-you-message {
+            top: 15%;
+
+            position: relative;
+
+
+            h2 {
+                font-weight: 600;
+                color: #b43b2d;
+
+                @include uppercase;
+                text-align: center;
+
+            }
+
+        }
+
+        .time-container {
+            position: relative;
+            @include row;
+            width: 100%;
+
+            top: 17.5%;
+
+            .arrow-container {
+                @include column;
+
+                .arrow-text {
+                    position: absolute;
+                    top: 62%;
+                    margin-left: 2%;
+                    margin-bottom: 20%;
+                    
+                    white-space: normal;
+                    text-align: center;
+                }
+
+                img {
+                    position: relative;
+                    top: 62%;
+                    width: 100%;
+
+
+                }
+
+            }
+
+
+
+            .minutes-container {
+                position: relative;
+                margin-left: 3%;
+                margin-right: 1%;
+                border: 3px solid #b43b2d;
+                top: 50%;
+                width: 40%;
+                @include column;
+                @include center;
+                height: 70%;
+                padding: 20px;
+
+                h1 {
+                    font-size: 80px;
+                    margin-bottom: 0;
+                    color: #b43b2d;
+
+                }
+
+                h5 {
+                    text-transform: lowercase;
+                    color: #b43b2d;
+                }
+            }
+
+
+        }
+
+    }
+
+
+}
+
+// HELP ON THE WAY MODAL
+
+.help-modal-wrapper{
+    display: flex;
+    @include center;
+    position: absolute;
+    z-index: 2;
+    background-color:rgba(0, 0, 0, 0.5);
+    top: 0;
+
+    
+    
+    width: 100vw;
+    height: 100vh;
+
+    .help-modal-container{
+        @include column;
+    
+       position: absolute;
+        background-color: #b43b2d;
+        opacity: 1;
+        @include standard-border;
+        border-color: white;
+        
+        height:300px;
+        width: 300px;
+        top: 25%;
+
+        .fa-x{
+            position: relative;
+            color: white;
+            top: 0;
+            margin: 5%;
+        }
+
+        h5{
+            @include center;
+            position: relative;
+            top: 30%;
+            color: white;
+        }
+        
+    }
+
+    
+}
+
+.spacer{
+    opacity: 0;
+}
+
+
+
+.popup-message{
+   
+  
+    overflow: scroll;
+    @include lower-screen-popup;
+    padding: 1%;
+    height: 15%;
+
+    .message-container{
+        
+        margin-left: 2%;
+        @include column;
+        
+        .close-container{
+            @include row;
+            right: 0;
+            margin-bottom: 2%;
+
+            .close-spacer{
+                width: 97%;
+            }
+            .fa-x{
+                color: white;
+            }
+        }
+
+        p{
+            text-align: left;
+            color: white;
+            font-weight: 300;
+            margin-bottom: 2;
+            font-size: 13px;
+        }
+
+       
+    }
+
+    
+}
+
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 600px) {
+
+    .site-container {
+
+        margin: 0%;
+        height: 100vh;
+
+    }
+
+    .sidebar {
+        min-width: 12%;
+
+    }
+
+
+    .menu-item-container {
+        min-width: 100%;
+
+    }
+
+    .text-info {
+        width: 70%;
+    }
+
+    .text-info.order-page {
+        width: 60%;
+    }
+
+    .item-price {
+        width: 10%;
+
+    }
+
+    .notes-container {
+        @include column();
+    }
+
+    .notes-input {
+
+        height: 100%;
+        width: 82%;
+        padding: 9px;
+        font-size: 16px;
+        border-width: 2px;
+    }
+
+    .notes-input.order-page {
+        margin-left: 0;
+    }
+
+    .order-total-container {
+        width: 100%;
+        height: 50%;
+        bottom: -0.5%;
+        left: 7%;
+
+    }
+
+    .logo-container {
+        width: 12%;
+
+    }
+
+    .side1 {
+        margin-left: 5%;
+        margin-top: 5%;
+
+    }
+
+
+    .side2 {
+        margin-left: 5%;
+        margin-top: 5%;
+
+    }
+
+    .side2.order-page {
+        width: 70%;
+    }
+
+    .add-on {
+        margin-top: 2%;
+        width: 70%;
+        
+        word-wrap: normal;
+
+    }
+
+    .price {
+        margin-top: 2%;
+        width: 10%;
+        font-size: 0.9rem;
+
+
+    }
+
+    .checkboxes {
+
+        margin-right: 5%;
+
+    }
+
+    .sidebar-extension {
+        min-width: 12%;
+        height: 100%;
+
+    }
+
+
+
+    .grid-image {
+        width: 270%;
+        -o-object-fit: cover;
+        object-fit: cover;
+
+    }
+
+    .eta-section {
+
+        height: 60%;
+
+    }
+
+    .eta-sidebar {
+        width: 11.3%;
+        height: 30%;
+
+    }
+
+    .table-no-container.start-page {
+        top: 55%;
+    }
+    .table-no-text{
+       
+       
+    }
+
+    .dietary-message-container{
+        width: 100%;
+    }
+    .ok-button{
+        top: 20%;
+    }
+    .popup-cart-container{
+        width: 89%;
+        right: 0;
+        bottom:6%;
+    }
+    .popup-message{
+        width: 89%;
+        right: 0;
+        bottom:6%;
+    }
+    .call-service-container{
+        width: 89%;
+        right: 0;
+        bottom:6%;
+    }
+    
+    .table-no.upper-menu{
+        h5{
+            font-size:11px;
+        }
+    }
+    .arrow-text{
+        width: 50%;
+    }
+
+    
+
+
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .site-container {
+        margin: 2%;
+        height: 96vh;
+
+    }
+
+    .sidebar {
+        min-width: 7%;
+    }
+
+
+    .menu-item-container {
+        min-width: 100%;
+    }
+
+    .text-info {
+        width: 77%;
+    }
+
+    .notes-container {
+        display: grid;
+
+        grid-template-columns: 50% 50%;
+
+    }
+
+    .notes-input {
+
+
+        height: 100%;
+        width: 80%;
+        padding: 9px;
+        font-size: 16px;
+        border-width: 2px;
+        margin-bottom: 20px;
+
+    }
+
+    .order-total-container {
+        width: 100%;
+        height: 50%;
+        left: 7%;
+        bottom: -0.5%;
+        top: 50px;
+
+    }
+
+    .logo-container {
+        width: 6.5%;
+        bottom: -0.5%;
+
+    }
+
+    .text-info {
+        width: 77%;
+
+    }
+
+    .text-info.order-page {
+        width: 70%;
+    }
+
+    .item-price {
+        min-width: 10%;
+    }
+
+    .menu-item {
+
+        .notes-container {
+            .side2 {
+                margin-right: 8%;
+            }
+
+        }
+
+    }
+
+    .add-on {
+        margin-top: 2%;
+        width: 80%;
+        font-size: 13px;
+
+    }
+
+    .price {
+        margin-top: 2%;
+        width: 20%;
+
+    }
+
+    .checkboxes {
+
+        margin-left: 3%;
+
+
+    }
+
+    .side1 {
+        margin-left: 10%;
+
+
+    }
+
+    .side2.order-page {
+        width: 85%;
+    }
+
+    .sidebar-extension {
+        width: 6.5%;
+        height: 50%;
+        left: 2%;
+    }
+
+
+    .grid-image {
+        width: 200%;
+        top: -300px;
+        -o-object-fit: cover;
+        object-fit: cover;
+
+    }
+
+    .eta-sidebar {
+        width: 6.5%;
+    }
+
+    .eta-section {
+
+        height: 60%;
+
+    }
+
+    .table-no-container.start-page {
+        top: 50vh;
+    }
+
+    .table-no-text{
+        font-size: 16px;
+    }
+
+    .dietary-message-container{
+        width: 95.5%;
+    }
+    .ok-button{
+        top: 30%;
+    }
+    .popup-cart-container{
+        width: 89.5%;
+        right: 2%;
+        bottom: 9%;
+    }
+    .call-service-container{
+        width: 89.5%;
+        right: 2%;
+        bottom: 9%;
+    }
+    .popup-message{
+        width: 89.5%;
+        right: 2%;
+        bottom: 9%;
+    }
+
+    .arrow-text{
+        width: 45%;
+    }
+
+
+
+
+
+
+
+}

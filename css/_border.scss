@@ -1,0 +1,19 @@
+$borderWidth: 3px;
+
+
+@mixin standard-border {
+    border: $borderWidth solid #b43b2d;
+}
+@mixin standard-border-right {
+    border-right: $borderWidth solid #b43b2d;
+}
+@mixin standard-border-left {
+    border-left: $borderWidth solid #b43b2d;
+}
+@mixin standard-border-top {
+    border-top: $borderWidth solid #b43b2d;
+}
+@mixin standard-border-bottom{
+    border-bottom: $borderWidth solid #b43b2d;
+}
+

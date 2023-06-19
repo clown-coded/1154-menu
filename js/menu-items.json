@@ -1,0 +1,81 @@
+{
+    "name": "menuItems"
+    [
+        
+    ]
+}
+
+
+menuItems = [
+    {
+        name: "weekly_special",
+        description: "Long, thin pasta. Spicy creamy tomato sauce, garlic, chilli, prawns, parsley, breadcrumbs, basil",
+        section: "specials",
+        price: 23,
+        add_ons: [
+            {
+                name: "bacon",
+                price: 6,
+                added: false
+            },
+            {
+                name: "chicken",
+                price: 6,
+                added: false
+            },
+            {
+                name: "prawns",
+                price: 6,
+                added: false
+            },
+            {
+                name: "mushrooms",
+                price: 6,
+                added: false
+            },
+            {
+                name: "pine nuts",
+                price: 6,
+                added: false
+            },
+            {
+                name: "breadcrumbs",
+                price: 1,
+                added: false
+            },
+            {
+                name: "prawns",
+                price: 6,
+                added: false
+            },
+            {
+                name: "walnuts",
+                price: 3,
+                added: false
+            },
+            {
+                name: "parmesean",
+                price: 3,
+                added: false
+            },
+            {
+                name: "chilli",
+                price: 2,
+                added: false
+            },
+            {
+                name: "olives",
+                price: 2,
+                added: false
+            },
+            {
+                name: "capers",
+                price: 2,
+                added: false
+            },
+
+        ],
+        notes: ""
+    }
+
+]

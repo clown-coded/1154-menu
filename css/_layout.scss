@@ -1,0 +1,281 @@
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+@mixin left{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+
+    
+}
+@mixin right{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+// SITE CONTAINER
+@mixin site-container-layout {
+    @include column();
+
+
+}
+
+// UPPER MENU CONTAINER
+@mixin upper-menu-container-layout {
+    @include row();
+    width: inherit;
+    height: 7%;
+
+    h5 {
+        font-size: 1em;
+        padding: 2px;
+        margin: 0;
+    }
+
+}
+
+@mixin toggle-container-layout {
+    @include row();
+    position: relative;
+    height: 100%;
+    width: 60%;
+}
+
+@mixin dietary-toggle {
+    @include center();
+
+    margin: 5px;
+
+    width: 50px;
+
+}
+
+
+@mixin table-no-container-layout {
+    @include row();
+
+    justify-content: RIGHT;
+    align-items: CENTER;
+
+    position: relative;
+    height: 100%;
+    width: 40%;
+
+}
+
+@mixin table-no {
+    @include center();
+    margin: 5px;
+    height: 80%;
+    width: 50px;
+}
+
+// MENU CONTENT
+@mixin menu-container-layout {
+    @include column();
+    width: inherit;
+    height: 100%;
+
+
+
+}
+
+// LAYOUT FOR WHOLE MENU SECTION
+@mixin menu-section-layout {
+    @include row();
+    width: 95%;
+
+}
+
+@mixin sidebar-layout {
+    position: sticky;
+    top: 0%;
+
+    // responsive sizing
+    @media screen and (max-width: 600px) {
+        
+    }
+
+    @media screen and (min-width: 600px) {
+       
+    }
+
+
+}
+
+// CONTAINS ALL MENU ITEMS IN SECTION
+@mixin menu-item-container {
+    @include column();
+
+
+    
+
+}
+
+// MENU ITEM
+
+@mixin menu-item {
+    position: relative;
+    @include column();
+    width: 100%;
+   
+}
+
+
+@mixin menu-item-header {
+    position: relative;
+    @include row();
+    // width: 100%;
+}
+
+@mixin text-info {
+    position: relative;
+
+    @include column();
+
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+
+}
+
+@mixin checkbox-container-layout {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+@mixin checkbox-layout {
+    @include column();
+    width: 40%;
+
+    margin: 3%;
+
+
+
+}
+
+
+
+
+
+@mixin closed {}
+
+
+// ORDER TOTAL
+@mixin order-total-container-layout {
+
+    @include row();
+
+}
+
+@mixin price-total-container-position {
+    position: relative;
+    @include row();
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 65%;
+
+    .order-total{
+        
+        margin-left: -38%;
+    }
+
+}
+
+@mixin order-button-layout {
+    @include center();
+    text-align: center;
+    width: 35%;
+
+    h3{
+        margin-bottom: 0;
+    }
+
+}
+
+@mixin lower-screen-popup {
+    position: absolute;
+    z-index: 1;
+    height: 31.5%;
+   
+    background-color: #b43b2d;
+    
+    
+    padding: 2%;
+    padding-bottom: 3%;
+    
+}
+
+@mixin logo-container {
+    
+    @include column();
+    @include center;
+    top: 67.5%;
+
+    .logo{
+        height: 100px;
+    }
+
+    
+
+
+}
+
+@mixin order-text-info {
+    position: relative;
+
+   @include row();
+   align-items: center;
+
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+
+    
+
+}
+
+
+@mixin start-grid{
+   
+        display: grid; 
+     
+        grid-template-rows: repeat(35, 2.85%);
+        grid-template-columns: repeat(35, 2.85%);
+        
+        gap: 0px;
+        height: 96vh;
+        border: 2px solid black;
+     
+     
+   
+
+}
+
+
+
+
+// MEDIA QUERIES
+
